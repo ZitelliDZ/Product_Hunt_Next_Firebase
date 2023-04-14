@@ -9,8 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.10.0",
+    "@emotion/core": "^11.0.0",
+    "@emotion/styled": "^11.10.6",
+    "babel-plugin-emotion": "^11.0.0",
+    "date-fns": "^2.29.3",
+    "firebase": "^9.19.1",
+    "firebase-admin": "^11.6.0",
     "next": "13.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-firebase-file-uploader": "^2.4.4"
   }
 }

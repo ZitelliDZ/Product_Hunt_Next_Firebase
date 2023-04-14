@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Layout from '../layout/Layout';
 import DetallesProducto from '@/components/DetallesProducto';
 import useProductos from '../../hooks/useProductos';
@@ -8,13 +8,12 @@ import useProductos from '../../hooks/useProductos';
 
 
 
-const Home = () => {
+const Populares = () => {
 
-  
-  const { productos } = useProductos('creado')
+  const { productos } = useProductos('votos')
 
   return (
-    <div>
+    <Fragment>
       <Layout>
 
         <div className='listado-productos'>
@@ -27,11 +26,11 @@ const Home = () => {
           </div>
         </div>
       </Layout>
-    </div>
+    </Fragment>
   )
 }
 
-export default Home
+export default Populares
 
 
 
